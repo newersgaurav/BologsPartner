@@ -1,0 +1,41 @@
+/* media query for header desktop view */
+
+@media only screen and (min-width: 1223px) and (max-width: 1358px){
+    header .nav-link{
+        font-size: 1em;
+    }
+} 
+
+@media only screen and (min-width: 1037px) and (max-width: 1222px){
+    header .nav-link{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1036px){
+    header .nav-link{
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 849px){
+    header .nav-link{
+        font-size: 0.5em;
+    }
+}
+
+/* end of media query for desktop */
+
+/* media query for footer */
+
+@media only screen and (max-width: 768px){
+    .kontakta h4{
+        margin-bottom: 30px;
+    }
+    .kontakta p{
+        font-size: 12px;
+    }
+    .kontakta p a{
+        font-size: 12px;
+    }
+}
