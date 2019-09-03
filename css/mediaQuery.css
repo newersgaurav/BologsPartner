@@ -29,6 +29,8 @@
 /* media query for footer */
 
 @media only screen and (max-width: 768px){
+
+    /* footer query */
     .kontakta h4{
         margin-bottom: 30px;
     }
@@ -37,5 +39,29 @@
     }
     .kontakta p a{
         font-size: 12px;
+    }
+    /* end of footer query */
+
+    /* page-1 query */
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .title-value-padding-left, .title-padding-left{
+        padding-left: 0px;
+    }
+    
+    .title-value-padding-right, .title-padding-right{
+        padding-right: 0px;
+    }
+
+    .title{
+        background: #fff;
+        padding: 5px 10px;
+    }
+
+    .title-value{
+        padding: 5px 10px;
     }
 }

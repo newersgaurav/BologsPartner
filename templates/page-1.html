@@ -12,13 +12,245 @@
     </head>
 
     <body>
-        <!-- mobile view -->
-        <section class="wrapper">
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a data-toggle="tab" href="#">Home</a></li>
-                <li><a data-toggle="tab" href="#">Menu 1</a></li>
-            </ul>
+        <section class="wrapper page1">
+            <div class="row">
+                <ul class="nav nav-tabs shadow col-sm-12 col-md-4 nav-justified" role="tablist">
+                    <li class="nav-item bologsbestallningar-border">
+                        <a onclick="changeTab('Bologsbestallningar')"
+                            class="bologsbestallningar-border nav-link active"
+                            data-toggle="tab" href="#tab-Bologsbestallningar">
+                            Bologsbestallningar
+                        </a>
+                        <div id="Bologsbestallningar" class="triangle"></div>
+                    </li>
+                    <li class="nav-item aktiebocker-border">
+                        <a onclick="changeTab('Aktiebocker')" class="aktiebocker-border nav-link"
+                         data-toggle="tab" href="#tab-Aktiebocker">Aktiebocker</a>
+                        <div id="Aktiebocker" class="triangle display-none"></div>
+                    </li>
+                </ul>
+
+                <div class="col-sm-12 col-md-8 d-flex">
+                    <div>
+                        <input class="search-input d-none" type="text">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <button>
+                        <span>+</span>  Bestall ett nytt bolag
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div id="tab-Bologsbestallningar" class="tab-pane active">
+                    <h5 class="head-title">Alla Bestallningar</h5>
+                    <div class="row">
+                        <!-- <div class="col-12 display-inline-block row"> -->
+                            <div class="col-12 col-md-3 padding-0 row">
+                                <div class="col-6 col-md-12 title title-padding-left">
+                                    <strong>
+                                        Onskat firmanamn
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value title-value-padding-left">
+                                    <strong>
+                                        Anders Bergdahl Forvaltning AB
+                                    </strong>
+                                </div>    
+                            </div>
+                            <div class="col-12 col-md-2 row padding-0">
+                                <div class="col-6 col-md-12 title">
+                                    <strong>
+                                        Status
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value">
+                                    <span class="status status-1">
+                                        <strong>
+                                            vantar pa underskrift
+                                        </strong>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2 row padding-0">
+                                <div class="col-6 col-md-12 title">
+                                    <strong>
+                                        Kontaktperson
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value">
+                                    <strong>
+                                        Maria Granmyr
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2 row padding-0">
+                                <div class="col-6 col-md-12 title">
+                                    <strong>
+                                        Lagerbolag
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value">
+                                    <strong>
+                                        -
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2 row padding-0">
+                                <div class="col-6 col-md-12 title">
+                                    <strong>
+                                        Type
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value">
+                                    <strong>
+                                        Avveckling
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-1 row padding-0">
+                                <div class="col-6 col-md-12 title title-padding-right">
+                                    <strong>
+                                        Ordertid
+                                    </strong>
+                                </div>
+                                <div class="col-6 col-md-12 title-value title-value-padding-right">
+                                    <strong>
+                                        2019-04-24 13:20
+                                    </strong>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="table-value col-6 col-md-12 display-inline-block row">
+                            <div class="col-sm-12 col-md-3 display-inline-block title-value">
+                                <strong>
+                                    Anders Bergdahl Forvaltning AB
+                                </strong>
+                            </div>
+                            <div class="col-sm-12 col-md-2 display-inline-block title-value">
+                                <span class="status status-1">
+                                    <strong>
+                                        vantar pa underskrift
+                                    </strong>
+                                </span>
+                            </div>
+                            <div class="col-sm-12 col-md-2 display-inline-block title-value">
+                                <strong>
+                                    Maria Granmyr
+                                </strong>
+                            </div>
+                            <div class="col-sm-12 col-md-2 display-inline-block title-value">
+                                <strong>
+                                    -
+                                </strong>
+                            </div>
+                            <div class="col-sm-12 col-md-1 display-inline-block title-value">
+                                <strong>
+                                    Avveckling
+                                </strong>
+                            </div>
+                            <div class="col-sm-12 col-md-2 display-inline-block title-value">
+                                <strong>
+                                    2019-04-24 13:20
+                                </strong>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="tab-Aktiebocker" class="tab-pane fade">
+                    <h5 class="head-title">Aktiebocker</h5>
+                </div>
+            </div>
+            
         </section>
+
+
+
+
+
+
+
+
+
+        <!-- <section class="wrapper page1">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item shadow">
+                    <a onclick="changeTab('Bologsbestallningar')" class="nav-link active" data-toggle="tab" href="#tab-Bologsbestallningar">Bologsbestallningar</a>
+                    <div id="Bologsbestallningar" class="triangle"></div>
+                </li>
+                <li class="nav-item shadow">
+                    <a onclick="changeTab('Aktiebocker')" class="nav-link" data-toggle="tab" href="#tab-Aktiebocker">Aktiebocker</a>
+                    <div id="Aktiebocker" class="triangle display-none"></div>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <div id="tab-Bologsbestallningar" class="tab-pane active"><br>
+                    <h5 class="head-title">Alla Bestallningar</h5>
+                    <ul class="cards bg-white shadow">
+                        <li class="d-flex">
+                            <p class="title">Onskat firmanamn</p>
+                            <p class="title-value">Anders Bergdahl Forvaltning AB</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Status</p>
+                            <p class="title-value"><span class="status status-1">vantar pa underskrift</span></p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Kontaktperson</p>
+                            <p class="title-value">Maria Granmyr</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Lagerbolag</p>
+                            <p class="title-value">-</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Type</p>
+                            <p class="title-value">Avveckling</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Ordertid</p>
+                            <p class="title-value ordertid-value">2019-04-24 13:20</p>
+                        </li>
+                    </ul>
+                    
+                    
+                    <ul class="cards bg-white shadow">
+                        <li class="d-flex">
+                            <p class="title">Onskat firmanamn</p>
+                            <p class="title-value">Anders Bergdahl Forvaltning AB</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Status</p>
+                            <p class="title-value"><span class="status status-2">offert skickad</span></p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Kontaktperson</p>
+                            <p class="title-value">Maria Granmyr</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Lagerbolag</p>
+                            <p class="title-value">-</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Type</p>
+                            <p class="title-value">Avveckling</p>
+                        </li>
+                        <li class="d-flex">
+                            <p class="title">Ordertid</p>
+                            <p class="title-value ordertid-value">2019-04-24 13:20</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab-Aktiebocker" class="container tab-pane fade"><br>
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            
+
+        </section> -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
