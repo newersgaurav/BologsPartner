@@ -28,7 +28,7 @@
 
 /* media query for footer */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
     /* footer query */
     .kontakta h4{
@@ -63,5 +63,92 @@
 
     .title-value{
         padding: 5px 10px;
+    }
+
+    .page1 .nav-tabs{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
+    .search-bar{
+        margin-top: 20px;
+        flex-direction: row-reverse;
+        padding: 0px;
+        background: transparent;
+    }
+
+    .search-div{
+        padding: 0px;
+        flex-basis: 40px;
+    }
+
+    .btn-div{
+        padding: 0px;
+    }
+
+    .btn-div div{
+        padding: 6px 0px;
+    }
+
+    .btn-value{
+        font-size: 12px;
+    }
+
+    .plus-icon{
+        font-size: 14px;
+    }
+
+    .search-icon{
+        padding: 10px 12px;
+        right: 0px;
+    }
+
+    ::placeholder{
+        color: transparent;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #tab-Bologsbestallningar .col-md-3{
+        flex-basis: 24%;
+        max-width: 24%;
+    }
+    
+    #tab-Bologsbestallningar .col-md-4{
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    
+    #tab-Bologsbestallningar .col-md-1{
+        flex-basis: 10%;
+        max-width: 10%;
+    }
+    
+    #tab-Bologsbestallningar .col-md-2{
+        flex-basis: 11%;
+        max-width: 11%;
+    }
+    
+    #tab-Bologsbestallningar .col-md-5{
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+
+    .aktiebocker-border{
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1122px){
+    .status{
+        font-size: 12px;
+    }
+
+    .desktop-view-value p, .desktop-view-heading p{
+        font-size: 12px;
+    }
+
+    .page1 .nav-link{
+        font-size: 12px;
     }
 }
