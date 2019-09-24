@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bologs Partner page-1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function (d) {
+                var config = {
+                    kitId: 'hbt2yrl',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h = d.documentElement, t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    },
+                        config.scriptTimeout), tk = d.createElement("script"),
+                    f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading";
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true; tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || a && a != "complete" && a != "loaded") return;
+                    f = true; clearTimeout(t);
+                    try {
+                        Typekit.load(config)
+                    }
+                    catch (e) { }
+                };
+                s.parentNode.insertBefore(tk, s)
+            })(document);
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/commonStyle.css">
+        <link rel="stylesheet" href="../css/page-3.css">
+        <link rel="stylesheet" href="../css/page-4.css">
+        <link rel="stylesheet" href="../css/page-5.css">
+        <link rel="stylesheet" href="../css/page-6.css">
+    </head>
+
+    <body>
+        <div class="page3 shadow">
+            <button class="back-button">
+                <strong>
+                    <i class="fa fa-arrow-left left-arrow"></i>
+                    Back
+                </strong>
+            </button>
+        
+            <h3 class="page3-heading">
+                <strong>
+                    Granbacken Invest AB
+                </strong>
+            </h3>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Bestallning avveckling
+                    </strong>
+                </h5>
+                <div class="col-12 col-md-7 row no-gutters card-content">
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Ordertid
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            2019-04-24 16:47
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Status
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            vantar pa underskrift
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Lagerbolag
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            -
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Organisationsnummer
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            -
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            underskriftsmetod
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Underskrift pa papper, utskick via e-post
+                        </strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Status information som kravs for bankkonto
+                    </strong>
+                </h5>
+            
+                <div class="card-content status-info">
+                    <!-- desktop view -->
+            
+                    <div class="row col-md-5">
+                        <ul class="row col-12 doc-title d-none d-md-flex">
+                            <li class="col-8">
+                                <strong>
+                                    Dokument
+                                </strong>
+                            </li>
+                            <li class="col-4">
+                                <strong>
+                                    Status
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex align-items-center">
+                            <li class="col-8">
+                                <strong>
+                                    Affarsplan
+                                </strong>
+                            </li>
+                            <li class="col-4">
+                                <button class="btn lamna-btn">
+                                    <strong>
+                                        Lamna
+                                    </strong>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex align-items-center">
+                            <li class="col-8">
+                                <strong>
+                                    Budget
+                                </strong>
+                            </li>
+                            <li class="col-4">
+                                <button class="btn lamna-done">
+                                    <!-- <strong> -->
+                                        <i class="fa fa-check"></i>
+                                    <!-- </strong> -->
+                                </button>
+                                <!-- <strong>
+                                    <i class="fa fa-check lamna-done"></i>
+                                </strong> -->
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex align-items-center">
+                            <li class="col-8">
+                                <strong>
+                                    Affarsplan
+                                </strong>
+                            </li>
+                            <li class="col-4">
+                                <button onclick="changeButton()" class="btn lamna-btn">
+                                    <strong>
+                                        Lamna
+                                    </strong>
+                                </button>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- end of desktop view -->
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Kontaktuppgifter
+                    </strong>
+                </h5>
+                <div class="col-12 col-md-7 row no-gutters card-content">
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Kontaktperson
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Maria Granmyr
+                        </strong>
+                    </div>
+
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Foretag
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Jostam Advisory KB
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Utdelningsadress
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Gruvvagen 5
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Postnummer
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            981 31
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Ort
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Kiruna
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Telefon
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            0980-311300
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Mobil
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            -
+                        </strong>
+                    </div>
+
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Fax
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            E-post
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            bolagstjanster@se.gt.com
+                        </strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Ovriga uppgifter
+                    </strong>
+                </h5>
+
+                <div class="card-content Ovrig">
+                    <p>
+                            Ovrig information
+                    </p>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Tillval
+                    </strong>
+                </h5>
+            
+                <div class="card-content tillval">
+                    <ul>
+                        <li>Registreringsavgift Bolagsverket verkling huvudman(+250 kr)</li>
+                        <li>Namngranskning(+495 kr)</li>
+                        <li>Registrering verklig huvudman(+295 kr)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Bolagsuppgifter
+                    </strong>
+                </h5>
+            
+                <div class="card-content bolagsuppgifter">
+                    <!-- desktop view -->
+                    <p class="bolagsuppgifter-para">
+                        Bolaget skall aga och forvalta aktier i onoterade bolag, handel med vardepapper och 
+                        darmed forenlig verksamhet.
+                    </p>
+
+                    <div class="row col-md-10">
+                        <ul class="row col-12 doc-title d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Onskat firmanamn
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Alternativt firmanamn 1
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Alternativt firmanamn 2
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Bolagets adress
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Granbacken Invest AB
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Granbacken Forvaltning AB
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Granbacken Holding AB
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <p>
+                                    <strong>
+                                        Granbacksgatan 6
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        52232 TIDAHOLM
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        Sverige, Tidaholm
+                                    </strong>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of desktop view -->
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Rakenskpsar
+                    </strong>
+                </h5>
+            
+                <div class="col-12 col-md-7 row no-gutters card-content Rakenskpsar">
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Rakenskpsar
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            1 september - 31 augusti
+                        </strong>
+                    </div>
+                
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Forlangt forsta rakenskpsar
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Ja
+                        </strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Forbehall
+                    </strong>
+                </h5>
+            
+                <div class="col-12 col-md-7 row no-gutters card-content Rakenskpsar">
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Hembud
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Ja
+                        </strong>
+                    </div>
+            
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Forkop
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Ja
+                        </strong>
+                    </div>
+
+                    <div class="col-6 col-md-5 card-content-title">
+                        <strong>
+                            Samtycke
+                        </strong>
+                    </div>
+                    <div class="col-6 col-md-7 card-content-title-value">
+                        <strong>
+                            Nej
+                        </strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Fullmakt
+                    </strong>
+                </h5>
+            
+                <div class="card-content bolagsuppgifter">
+                    <!-- desktop view -->
+            
+                    <div class="row col-md-8">
+                        <ul class="row col-12 doc-title d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+            
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Tilltalsnamn
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Efternamn
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Personnummer
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Generalfullmakt
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Tobias
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Eriksson
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    198404036074
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Bankfullmakt
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Tobias
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Eriksson
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    198404036074
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of desktop view -->
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Styrelse / Agare / Revisorer
+                    </strong>
+                </h5>
+            
+                <div class="card-content bolagsuppgifter">
+                    <!-- desktop view -->
+            
+                    <div class="row col-md-9">
+                        <ul class="row col-12 doc-title d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+            
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Namn
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Personnummer
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Adress
+                                </strong>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Aktieagare (500 aktier)
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Tobias Eriksson
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    198404036074
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <p>
+                                    <strong>
+                                        Granbacksgatan 6
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        52232 TIDAHOLM
+                                    </strong>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="row col-12 doc-title-value d-none d-md-flex">
+                            <li class="col-3">
+                                <strong>
+                                    Styrelseledamot
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    Tobias Eriksson
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <strong>
+                                    198404036074
+                                </strong>
+                            </li>
+                            <li class="col-3">
+                                <p>
+                                    <strong>
+                                        Granbacksgatan 6
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        52232 TIDAHOLM
+                                    </strong>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of desktop view -->
+                </div>
+            </div>
+
+            <div class="row no-gutters card">
+                <h5 class="card-heading col-12">
+                    <strong>
+                        Firmateckning
+                    </strong>
+                </h5>
+            
+                <div class="card-content Firmateckning">
+                    <p>
+                        Firma tecknas av styrelsen
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>

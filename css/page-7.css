@@ -1,0 +1,718 @@
+/* customize checkbox */
+
+.label-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .label-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .label-container input:checked ~ .checkmark {
+    background-color: #47be6f;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .label-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .desktop-view-value .label-container .checkmark{
+      top: -4px;
+  }
+  
+  /* Show the checkmark when checked */
+  .label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .label-container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 8px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .page3-heading span{
+      color: #858585;
+      font-weight: 500;
+  }
+
+
+.scroll-tabs .nav-tabs{
+    padding: 0px;
+    background: #fff;
+    border-radius: 4px;
+    border: 0px;
+    width: auto;
+}
+
+.scroll-tabs .nav-item{
+    position: relative;
+    padding: 0px;
+    flex: 0 0 auto;
+}
+
+.scroll-tabs .nav-link{
+    padding: 21px 0px;
+    font-size: 14px;
+    color: #fc7d00;
+    border: 0px;
+    width: 100%;
+    /* position: relative; */
+}
+
+.scroll-tabs .nav-link.active{
+    color: #fb6a3f;
+    font-weight: 700;
+    /* border-: 5px solid #fb6a3f; */
+    background: #fff3ed;
+}
+
+.Aktieagare-border-radius{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.Aktieagare-border{
+    border-bottom: 5px solid #fb6a3f;
+}
+
+.Handelser-border, .Rapporter-border, .Administration-border{
+    border-right: 2px solid #e0e0e0;
+}
+
+.Handelser-border .active, .Rapporter-border .active, .Administration-border .active{
+    border-right: 2px solid #ffcfad !important;
+    border-left: 2px solid #ffcfad !important;
+ }
+
+ .Aktieagare-border .active{
+    border-right: 2px solid #ffcfad !important;
+ }
+
+.scroll-tabs::-webkit-scrollbar, .filter-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-tabs{
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    padding-bottom: 20px;
+}
+
+
+
+.info-cards{
+    background: #fff2e7;
+    border-radius: 4px;
+    padding: 20px;
+    flex-basis: 20%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.info-cards:last-child{
+    margin-right: 0px;
+}
+
+.info-cards .card-title{
+    color: #8e8a88;
+}
+
+.info-cards .card-title-value{
+    font-size: 20px;
+    color: #2b3c4d;
+}
+
+.info-cards .card-title-value span{
+    font-size: 14px;
+}
+
+.info-card-img{
+    width: 40px;
+}
+
+#tab-Rapporter{
+    min-height: 300px;
+}
+
+#tab-Rapporter h5{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.administrator{
+    font-size: 16px;
+}
+
+.lasrattigheter{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.lasrattigheter-desc{
+    color: #858585;
+}
+
+#tab-Administration .btn-container{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#tab-Aktieagare .cards{
+    margin-top: 20px;
+}
+
+#tab-Aktieagare .desktop-view-heading{
+    margin-top: 20px;
+}
+
+#tab-Administration button{
+    color: #fc7d00;
+    border-color: #fc7d00;
+    width: 120px;
+}
+
+.administration-title{
+    flex-basis: 25% !important;
+}
+
+.administration-title-value{
+    flex-basis: 75% !important;
+}
+
+#tab-Administration .desktop-tabs, #tab-Handelser .desktop-tabs{
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+
+#tab-Administration .desktop-tabs .nav-item, #tab-Handelser .desktop-tabs .nav-item{
+    margin-right: 20px;
+}
+
+#tab-Administration .desktop-tabs .nav-item .nav-link, #tab-Handelser .desktop-tabs .nav-item .nav-link{
+    color: #858585;
+    border: none;
+}
+
+#tab-Administration .desktop-tabs .nav-item .active, #tab-Handelser .desktop-tabs .nav-item .active{
+    border: none;
+    border-bottom: 5px solid #fc7d00 !important;
+    color: #fc7d00;
+    font-weight: 700;
+}
+
+.circle-span-container{
+    border-radius: 500px;
+    width: 30px;
+    height: 16px;
+    border: 1px solid #ffb510;
+    position: relative;
+    display: inline-block;
+}
+
+.switch-div-desp{
+    font-size: 15px;
+    color: #727272;
+    margin-left: 10px;
+}
+
+.circle-span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffb510;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.dropdown-div{
+    width: 100%;
+    padding: 6px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.dropdown-div .nav-tabs .nav-item .nav-link{
+    padding: 10px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.dropdown-div .nav-tabs .nav-item .active{
+    background: #fff2e7;
+    color: #fb6a3f;
+    border: none;
+}
+
+.dropdown-div .nav-tabs{
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 104%;
+    z-index: 1;
+    background: #fff;
+    left: 0px;
+    border: 1px solid #fff2e7;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.filter-div{
+    border-radius: 500px;
+    border: 1px solid #e0e0e0;
+    padding: 7px !important;
+    padding-left: 20px !important;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #858585;
+    position: relative;
+}
+
+.filter-div:focus{
+    outline: none;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:rgba(0,0,0,0.3);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.triangle-dropdown{
+    width: 10px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    z-index: 1;
+}
+
+.filter-div:last-child{
+    margin-right: 0px;
+}
+
+.filter-dropdown{
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    width: 130%;
+    max-height: 230px;
+    overflow-y: auto;
+    z-index: 1;
+    margin-left: -40px;
+    padding: 10px;
+}
+
+.dropdown-icon{
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    color: #858585;
+    transition: all 0.5s ease-in;
+}
+
+.filter-dropdown .label-container{
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.filter-dropdown .label-container .checkmark{
+    top: 4px;
+    height: 15px;
+    width: 15px;
+}
+
+.filter-dropdown .label-container .checkmark:after{
+    left: 4px;
+    top: 1px;
+    width: 7px;
+}
+
+#Alla-aktietyper strong, #Alla-aktieagare strong{
+    color: #000;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.search-input-div{
+    position: relative;
+}
+
+.search-input-div input{
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 70%;
+    border: none;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.search-input-div input:focus{
+    outline: none;
+}
+
+.search-input-div .search-input-icon{
+    color: #ffa466;
+    font-size: 20px;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+
+#tab-Oversikt .desktop-view-heading{
+    margin-top: 30px;
+}
+
+.Aktiebokshandelser, .Registrera{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#tab-Oversikt .cards{
+    margin-top: 20px;
+}
+
+.Ny-handelse-cards{
+    flex-basis: 22%;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ffcfad;
+    background: #fff3ed;
+    margin-bottom: 20px;
+    margin-right: calc(12%/4);
+}
+
+.Ny-handelse-cards:nth-child(4n){
+    margin-right: 0px;
+}
+
+.Ny-handelse-cards:hover{
+    -moz-box-shadow: 0 0 5px #fc7d00;
+    -webkit-box-shadow: 0 0 5px#fc7d00;
+    box-shadow: 0 0 5px #fc7d00;
+    cursor: pointer;
+}
+
+.Registrera-para{
+    color: #858585;
+}
+
+.Ny-handelse-cards:hover h5{
+    color: #fc7d00;
+}
+
+.Ny-handelse-cards h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.Ny-handelse-cards p{
+    font-size: 14px; 
+    color: #858585;
+}
+
+#tab-Angra .title strong{
+    display: inline;
+}
+
+#tab-Angra .title label{
+    display: inline-block;
+}
+
+#tab-Angra .btn-container{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#tab-Angra .btn-container button{
+    color: #e07f38;
+    border-color: #e07f38;
+    width: 300px;
+}
+
+#tab-Angra .btn-container button:hover{
+    background: #fff;
+}
+
+#tab-Angra .btn-container button img{
+    width: 17px;
+    margin-right: 10px;
+}
+
+#myFilterModal .modal-dialog{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#myFilterModal .modal-body{
+    padding: 0px;
+}
+
+#myFilterModal .filter-tab-headers{
+    padding: 10px 0px;
+    margin: 0px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.filter-tabs .nav-link{
+    color: #7b7b7b;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+/* .filter-tabs .nav-link[href="#tab-filter-Aktieagare"]{
+    border-top: 1px solid transparent;
+} */
+
+.filter-tabs .nav-item{
+    border-right: 4px solid transparent;
+}
+
+.filter-tabs .nav-item .active{
+    color: #e07d37;
+    background: #fcf3ed;
+    border-top: 1px solid #fecead;
+    border-bottom: 1px solid #fecead;
+}
+
+.filter-tabs .nav-item{
+    position: relative;
+    width: 100%;
+}
+
+/* .filter-tabs #tab-filter-Aktieagare{
+    border-bottom: 1px solid #dfdfdf;
+} */
+
+.filter-tabs .Aktietyper-border{
+    border-right: 4px solid #fb6a3f;
+}
+
+.vertical-triangle{
+    width: 10px;
+    border-top: solid 5px transparent;
+    border-left: solid 7px #fb6a3f;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    position: absolute;
+    right: -15px;
+    top: 35%;
+}
+
+.filter-tabs-values-heading{
+    text-align: right;
+    padding-right: 15px !important;
+    color: #fc7c3f;
+}
+
+.filter-tabs-heading{
+    text-align: center;
+}
+
+#myFilterModal .modal-header{
+    border-bottom: 0px;
+}
+
+#myFilterModal .filter-tab-values{
+    padding: 10px 20px;
+}
+
+#myFilterModal .filter-tab-values .label-container{
+    font-size: 16px;
+}
+
+#myFilterModal .filter-tab-values .label-container .checkmark{
+    top: 3px;
+}
+
+#myFilterModal .modal-footer{
+    padding: 0px;
+}
+
+#myFilterModal .modal-footer .btn{
+    width: 100%;
+    color: #fff;
+    background: #fb693f;
+    border-radius: 0px;
+    border: 0px;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+#myFilterModal .filter-tab-headers-value{
+    height: -webkit-fill-available;
+    margin-bottom: 0px;
+    background: white;
+}
+
+#myFilterModal .filter-tabs{
+    border-right: 1px solid #dfdfdf;
+}
+
+#filter-btn{
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 767px){
+    .scroll-tabs{
+        margin: 0px -20px;
+    }
+
+    .info-cards{
+        margin-right: 0px;
+        flex-basis: 45%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .tags-div{
+        justify-content: space-between;
+    }
+
+    .info-cards .card-title-value span {
+        font-size: 8px;
+    }
+
+    .info-cards .card-title {
+        font-size: 10px;
+    }
+
+    .info-cards .card-title-value{
+        font-size: 12px;
+    }
+
+    .info-card-img{
+        width: 30px;
+    }
+
+    #tab-Administration button{
+        background: #fc7d00;
+        color: #fff;
+        width: 90px;
+    }
+
+    .search-input-div input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-right: 50px;
+    }
+
+    .filter-div{
+        padding: 5px !important;
+        padding-left: 20px !important;
+    }
+
+    .filter-input-div{
+        flex-direction: column-reverse;
+    }
+
+    .search-input-div .search-input-icon{
+        font-size: 16px;
+    }
+
+    #tab-Angra .btn-container button{
+        width: 200px;
+        background: #e07f38;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    #tab-Angra .btn-container button img{
+        display: none;
+    }
+
+    #Alla-aktietyper, #Alla-aktieagare{
+        display: none;
+    }
+
+    .circle-span-container{
+        width: 25px;
+        height: 12px;
+    }
+
+    .circle-span{
+        width: 6px;
+        height: 6px;
+    }
+
+    .switch-div-desp{
+        font-size: 12px;
+    }
+
+    #tab-Aktieagare .filter-div strong{
+        color: #000;
+    }
+
+    .Ny-handelse-cards{
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+
+    #tab-Ny-handelse ul{
+        flex-wrap: wrap;
+    }
+}

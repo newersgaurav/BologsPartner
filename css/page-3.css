@@ -8,7 +8,7 @@
 }
 
 .back-button{
-    padding: 10px;
+    padding: 3px 10px;
     color: #ff6700;
     border-radius: 4px;
     border: 2px solid #ff6700;
@@ -24,23 +24,69 @@
 }
 
 .page3-heading{
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 
 .card-heading{
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .card-content{
-    margin-left: 20px;
-    margin-top: 30px;
+    padding-left: 20px !important;
     margin-bottom: 20px;
 }
 
-.card-content-title p, .card-content-title-value p{
+.card-content-title , .card-content-title-value{
     font-size: 15px;
     padding: 8px 0px;
     border-bottom: 1px solid #e0e0e0;
     margin: 0px;
+}
+
+.card-content-title{
+    color: #767676;
+}
+
+.card{
+    margin-bottom: 50px;
+}
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 767px){
+    .page3{
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .page3-heading{
+        font-size: 16px;
+    }
+
+    .card-content{
+        padding-left: 0px !important;
+        margin: 0px;
+    }
+
+    .card-content-title{
+        padding-left: 10px !important;
+        font-size: 12px;
+    }
+
+    .card-content-title-value{
+        padding-right: 10px !important;
+        font-size: 11px;
+    }
+    .card-heading{
+        padding: 10px 10px !important;
+        font-size: 14px;
+    }
+    /* .shadow{
+        box-shadow: none !important;
+    } */
+    
 }

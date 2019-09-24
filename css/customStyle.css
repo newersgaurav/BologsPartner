@@ -148,7 +148,8 @@ header .navbar-nav{
 /* footer css */
 
 footer{
-    padding-top: 100px;
+    padding-top: 50px;
+    background: #fff;
 }
 
 footer span{
@@ -230,11 +231,13 @@ footer p{
     border-bottom-right-radius: 0px !important;
 }
 
-.bologsbestallningar-border-bottom{
+.bologsbestallningar-border-bottom
+, .Aktieagare-border-bottom
+{
     border-bottom: 5px solid #fb6a3f;
 }
 
-.bologsbestallningar-border-bottom .active{
+.bologsbestallningar-border-bottom .active, .Aktieagare-border-bottom .active{
     border-right: 2px solid;
     border-color: #ffe4d2 !important;
 }
@@ -398,7 +401,7 @@ footer p{
 }
 
 .btn-value{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .button-content{
@@ -426,3 +429,32 @@ footer p{
     border-radius: 4px;
 }
 /* end of page-1 css */
+
+
+
+
+
+.container .u1{
+    display: flex;
+}
+
+.container .u1 .li-1{
+    height: auto;
+    background: #ccc;
+}
+
+.container .ul-2 .li-2{
+    background: #4f9490;
+    height: fill-available;
+}
+.li-1{
+    flex-basis: 50%;
+}
+
+.li-2{
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.ul-2{
+    height: fill-available;
+}

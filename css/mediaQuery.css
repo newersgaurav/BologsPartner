@@ -28,6 +28,12 @@
 
 /* media query for footer */
 
+@media only screen and (max-width: 1190px){
+    .btn-value{
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 767px){
 
     /* footer query */
@@ -90,7 +96,7 @@
     }
 
     .btn-value{
-        font-size: 12px;
+        padding: 15px;
     }
 
     .plus-icon{
@@ -152,3 +158,4 @@
         font-size: 12px;
     }
 }
+

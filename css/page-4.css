@@ -1,0 +1,79 @@
+.card-heading{
+    position: relative;
+}
+
+.card-heading-btn{
+    position: absolute;
+    padding: 8px;
+    background: #e07c1d;
+    color: #fff;
+    right: 10px;
+    top: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.docu-div{
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.doc-title{
+    background: #fceddf;
+    color: #db720f;
+    padding: 0px;
+    margin: 0px;
+}
+
+.doc-title li, .doc-title-value li{
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+.doc-title-value{
+    background: #f8f9fa;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pdf-icon{
+    width: 20px;
+}
+
+.pdf-name{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.mottaget-value p{
+    margin: 0px;
+}
+
+.mottaget-value p:last-child{
+    color: #ff6700;
+}
+
+.download-icon{
+    margin-right: 5px;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 767px){
+    .card-heading-btn{
+        right: 6px;
+        top: 4px;
+        font-size: 10px;
+    }
+    .pdf-name{
+        margin-left: 0px;
+    }
+    .doc-title-value li{
+        font-size: 10px;
+        padding: 15px 10px;
+    }
+    .doc-title li{
+        padding: 15px 10px;
+    }
+}

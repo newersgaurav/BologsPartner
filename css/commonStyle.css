@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "foco",sans-serif;
     background: #f5f9fc;
 }
 
@@ -17,6 +17,10 @@ body{
 .display-none{
     display: none;
 }
+
+/* .display-block{
+    display: block;
+} */
 
 .display-inline-block{
     display: inline-block;
@@ -33,3 +37,6 @@ body{
 ul{
     list-style-type: none;
 }
+
+
+/* ---------------------------------------- */

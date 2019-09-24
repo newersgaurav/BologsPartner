@@ -1,0 +1,53 @@
+.Ovrig p, .Firmateckning p{
+    color: #6e6e6e;
+    margin: 0px;
+}
+
+.tillval{
+    padding-left: 40px !important;
+}
+
+.tillval ul li{
+    color: #6e6e6e;
+    margin-bottom: 10px;
+}
+
+.tillval ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.tillval ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f77300; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.bolagsuppgifter-para{
+    color: #6e6e6e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.bolagsuppgifter .doc-title-value, .status-info .doc-title-value{
+    background: #fff9f6;
+}
+
+.lamna-btn{
+    color: #f77300;
+    border: 1px solid #f77300;
+    border-radius: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.lamna-done{
+    color: #45ac3b;
+    border: transparent;
+    padding: 6px 20px;
+    font-size: 25px;
+}
+
