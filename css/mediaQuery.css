@@ -108,9 +108,313 @@
         right: 0px;
     }
 
-    ::placeholder{
+    .search-input::placeholder{
         color: transparent;
     }
+
+    .Ovrig p, .Firmateckning p{
+        padding-left: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .tillval ul li{
+        font-size: 12px;
+    }
+
+    .tillval{
+        padding-left: 23px !important;
+    }
+
+    .bolagsuppgifter-para{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    /* page-3 media css */
+
+    .page3{
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .page3-heading{
+        font-size: 16px;
+    }
+
+    .card-content{
+        padding-left: 0px !important;
+        margin: 0px;
+    }
+
+    .card-content-title{
+        padding-left: 10px !important;
+        font-size: 12px;
+    }
+
+    .card-content-title-value{
+        padding-right: 10px !important;
+        font-size: 11px;
+    }
+    .card-heading{
+        padding: 10px 10px !important;
+        font-size: 14px;
+    }
+
+    /* end of page-3 media css */
+
+    /* page-4 media css */
+
+    .card-heading-btn{
+        right: 6px;
+        top: 4px;
+        font-size: 10px;
+    }
+    .pdf-name{
+        margin-left: 0px;
+    }
+    .doc-title-value li{
+        font-size: 10px;
+        padding: 15px 10px;
+    }
+    .doc-title li{
+        padding: 15px 10px;
+    }
+
+    /* end of page-4 media css */
+
+    /* page-5 media css */
+
+    .radio-label input:checked ~ .span-message{
+        display: block;
+    }
+
+    .span-message{
+        margin-left: 0px;
+    }
+
+    .ques-ans-div p{
+        font-size: 12px;
+    }
+
+    .ques-ans-div h5{
+        font-size: 14px;
+    }
+
+    .radio-label{
+        font-size: 12px;
+    }
+
+    .span-message{
+        font-size: 11px;
+    }
+
+    .mobile-docu-div{
+        margin: 10px 0px;
+    }
+
+    .mobile-docu-div ul{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .mobile-icon-div{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        padding-top: 10px;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .delete-icon,.edit-icon{
+        margin-right: 0px;
+    }
+
+    #myDeleteModal .modal-dialog{
+        width: 100%;
+    }
+
+    #myDeleteModal .modal-body button{
+        width: 50%;
+    }
+
+    #myDeleteModal .modal-body h3{
+        font-size: 20px;
+    }
+
+    #myEditModal .modal-dialog, #myButtonModal .modal-dialog{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #myEditModal .modal-body, #myButtonModal .modal-body{
+        padding: 16px 10px;
+    }
+
+    #myEditModal .modal-header, #myButtonModal .modal-header{
+        padding-left: 10px;
+    }
+
+    .Tilltalsnamn-div{
+        padding-right: 0px !important;
+    }
+  
+    .Efternamn-div{
+        padding-left: 0px !important;
+    }
+  
+    .Personuppgifter, .Aktier, .form-btn-group, .organisationsnummer-div{
+        padding-right: 0px !important;
+    }
+  
+    .Adress, .namn-div{
+        padding-left: 0px !important;
+    }
+
+    #myEditModal .span-message, #myButtonModal .span-message{
+        display: none;
+        margin-left: 0px;
+    }
+
+    #myEditModal .modal-title, #myButtonModal .modal-title{
+        padding-top: 30px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    #myEditModal h5, #myButtonModal h5{
+        font-size: 16px;
+    }
+
+    #myEditModal .checkbox-div, #myButtonModal .checkbox-div{
+        margin-bottom: 20px;
+    }
+
+    #myEditModal button, #myButtonModal button{
+        margin-bottom: 10px;
+    }
+
+    #myButtonModal .select-div{
+        padding-right: 0px;
+    }
+
+    /* end of page-5 media css */
+
+    /* page-7 media css */
+
+    .scroll-tabs{
+        margin: 0px -20px;
+    }
+
+    .scroll-tabs .nav-item{
+        max-width: 40%;
+    }
+
+    .info-cards{
+        margin-right: 0px;
+        flex-basis: 45%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .tags-div{
+        justify-content: space-between;
+    }
+
+    .info-cards .card-title-value span {
+        font-size: 8px;
+    }
+
+    .info-cards .card-title {
+        font-size: 10px;
+    }
+
+    .info-cards .card-title-value{
+        font-size: 12px;
+    }
+
+    .info-card-img{
+        width: 30px;
+    }
+
+    #tab-Administration button{
+        background: #fc7d00;
+        color: #fff;
+        width: 90px;
+    }
+
+    .search-input-div input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-right: 50px;
+    }
+
+    .filter-div{
+        padding: 5px !important;
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+    }
+
+    .filter-input-div{
+        flex-direction: column-reverse;
+    }
+
+    .search-input-div .search-input-icon{
+        font-size: 16px;
+    }
+
+    #tab-Angra .btn-container button{
+        width: 200px;
+        background: #e07f38;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    #tab-Angra .btn-container button img{
+        display: none;
+    }
+
+    #Alla-aktietyper, #Alla-aktieagare{
+        display: none;
+    }
+
+    .circle-span-container{
+        width: 25px;
+        height: 12px;
+    }
+
+    .circle-span{
+        width: 6px;
+        height: 6px;
+    }
+
+    .switch-div-desp{
+        font-size: 12px;
+    }
+
+    #tab-Aktieagare .filter-div strong{
+        color: #7c7c7c;
+    }
+
+    .Ny-handelse-cards{
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+
+    #tab-Ny-handelse ul{
+        flex-wrap: wrap;
+    }
+
+    .scroll-tabs .nav-tabs{
+        box-shadow: none;
+    }
+
+    .scroll-tabs .nav-tabs .nav-item{
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* end of page-7 media css */
 }
 
 @media only screen and (min-width: 768px){
@@ -159,3 +463,144 @@
     }
 }
 
+/* for iPad and iPad pro */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    footer p{
+        font-size: 14px;
+    }
+
+    .plus-icon{
+        width: 22px;
+        font-size: 13px;
+    }
+
+    .radio-label input:checked ~ .span-message {
+        display: block;
+    }
+
+    .span-message {
+        margin-left: 0;
+    }
+
+    .Personuppgifter, .Aktier, .form-btn-group, .organisationsnummer-div {
+        padding-right: 20px !important;
+    }
+
+    .Adress, .namn-div {
+        padding-left: 20px !important;
+    }
+
+    #myEditModal label, #myButtonModal label {
+        font-size: 12px;
+    }
+
+    #myEditModal .span-message, #myButtonModal .span-message{
+        margin-left: 0px;
+        display: block;
+    }
+
+    .form-btn, .avbryt-btn{
+        font-size: 10px;
+    }
+
+    #myDeleteModal .modal-dialog {
+        width: 70%;
+    }
+
+    .doc-title li, .doc-title-value li {
+        font-size: 10px;
+    }
+
+    .info-cards .card-title-value span {
+        font-size: 9px;
+    }
+
+    .info-card-img {
+        width: 30px;
+    }
+
+    .info-cards .card-title-value {
+        font-size: 12px;
+    }
+
+    .info-cards .card-title {
+        font-size: 10px;
+    }
+
+    .info-cards{
+        padding: 15px;
+        flex-basis: 24%;
+        margin-right: 5px;
+    }
+
+    .switch-div-desp{
+        font-size: 10px;
+    }
+
+    .search-input-div input{
+        width: 85%;
+    }
+
+    .filter-div{
+        font-size: 11px;
+    }
+
+    .Ny-handelse-cards p{
+        font-size: 10px;
+    }
+
+    .Ny-handelse-cards h5{
+        font-size: 12px;
+    }
+
+    #tab-Administration .desktop-tabs .nav-item{
+        font-size: 9px;
+        margin-right: 6px;
+    }
+    
+    #tab-Administration .desktop-tabs{
+        padding-left: 0px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+    #tab-Administration .desktop-tabs .nav-item{
+        margin-right: 16px;
+        font-size: 12px;
+    }
+
+    #tab-Administration .desktop-tabs{
+        padding-left: 0px;
+    }
+
+    .switch-div-desp{
+        font-size: 10px;
+    }
+
+    .search-input-div input{
+        width: 85%;
+    }
+
+    .filter-div{
+        font-size: 11px;
+    }
+
+    .info-cards .card-title-value {
+        font-size: 14px;
+    }
+
+    .info-cards .card-title {
+        font-size: 12px;
+    }
+
+    .info-cards{
+        padding: 15px;
+        flex-basis: 22%;
+    }
+
+    #myEditModal .span-message, #myButtonModal .span-message{
+        margin-left: 10px;
+    }
+}

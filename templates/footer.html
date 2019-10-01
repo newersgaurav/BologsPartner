@@ -5,9 +5,34 @@
         <title>Bologs Partner Header</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function (d) {
+                var config = {
+                    kitId: 'hbt2yrl',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h = d.documentElement, t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    },
+                        config.scriptTimeout), tk = d.createElement("script"),
+                    f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading";
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true; tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || a && a != "complete" && a != "loaded") return;
+                    f = true; clearTimeout(t);
+                    try {
+                        Typekit.load(config)
+                    }
+                    catch (e) { }
+                };
+                s.parentNode.insertBefore(tk, s)
+            })(document);
+        </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/customStyle.css">
+        <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/mediaQuery.css">
     </head>
 
@@ -19,7 +44,7 @@
                         <h4>
                             Om oss
                         </h4>
-                        <p>
+                        <p class="Om-oss-para">
                             Bolagspartner är Sveriges största leverantör av lagerbolag.
                             Förutom lagerbolag har vi ett brett utbud av bolagstjänster såsom ändringar
                             i aktiebolag och snabbavvecklingar.
@@ -58,8 +83,8 @@
                                 <span>Bankgiro: 629-9788</span>
                             </p>
                             <p class="col-6 col-md-12 display-inline-block">
-                                <span>Telefon: 046-460 12 80</span>
-                                <span>Fax: 0735-27 63 00</span>
+                                <span><span class="Telefon">Telefon:</span> 046-460 12 80</span>
+                                <span><span class="Fax">Fax:</span> 0735-27 63 00</span>
                                 <span><a href="#" class="footer-links">info@bolagspartner.se</a></span>
                             </p>
                             <p class="col-6 col-md-12 display-inline-block">

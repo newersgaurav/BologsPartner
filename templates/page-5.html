@@ -31,10 +31,8 @@
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/commonStyle.css">
-        <link rel="stylesheet" href="../css/page-3.css">
-        <link rel="stylesheet" href="../css/page-4.css">
-        <link rel="stylesheet" href="../css/page-5.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/mediaQuery.css">
     </head>
 
     <body>
@@ -42,8 +40,7 @@
         <div class="page3 shadow">
             <button class="back-button">
                 <strong>
-                    <i class="fa fa-arrow-left left-arrow"></i>
-                    Back
+                    <i class="fa fa-arrow-circle-left left-arrow"></i>
                 </strong>
             </button>
     
@@ -85,7 +82,7 @@
             <!-- hdhdhdhd -->
 
             <div class="row no-gutters">
-                <div class="row col-md-9 col-12 no-gutters card">
+                <div class="row col-lg-9 col-12 no-gutters card">
                     <h5 class="card-heading">
                         <strong>
                             Aktieagare
@@ -103,7 +100,7 @@
                         <!-- desktop view -->
 
                         <ul class="row col-12 doc-title d-none d-md-flex">
-                            <li class="col-3">
+                            <li class="col-3 roll">
                                 <strong>
                                     Roll
                                 </strong>
@@ -118,14 +115,14 @@
                                     Adress
                                 </strong>
                             </li>
-                            <li class="col-3">
+                            <li class="col-3 atgarder">
                                 <strong>
                                     Atgarder
                                 </strong>
                             </li>
                         </ul>
                         <ul class="row col-12 doc-title-value d-none d-md-flex">
-                            <li class="col-3">
+                            <li class="col-3 roll-value">
                                 <strong>
                                     Aktieagare(1000 aktier)
                                 </strong>
@@ -164,7 +161,7 @@
                                     </strong>
                                 </p>
                             </li>
-                            <li class="col-3 d-flex">
+                            <li class="col-3 d-flex atgarder-value">
                                 <img class="edit-icon" src="../images/edit-icon.png" alt="edit"
                                     data-toggle="modal" data-target="#myEditModal">
                                 <img class="delete-icon" src="../images/delete-icon.png" alt="delete"
@@ -296,6 +293,12 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
+
+            <button class="clear-btn">
+                <strong>
+                    Klar
+                </strong>
+            </button>
 
         </div>
 
@@ -561,18 +564,18 @@
                                 </strong>
                             </h7>
                             <div class="checkbox-div d-flex align-items-center">
-                                <label class="radio-label" onclick="showSpanMessage()">
+                                <label class="radio-label" onclick="radioChecked('Sverige')">
                                     <strong>
                                         Sverige
                                     </strong>
-                                    <input type="radio" class="radio-btn-1" checked="checked" name="radio-2">
+                                    <input type="radio" class="radio-btn-1 Sverige" checked="checked" name="radio-3">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="radio-label" onclick="showSpanMessage()">
+                                <label class="radio-label" onclick="radioChecked('Utlandet')">
                                     <strong>
                                         Utlandet
                                     </strong>
-                                    <input type="radio" name="radio-2" class="radio-btn-2">
+                                    <input type="radio" name="radio-3" class="radio-btn-2 Utlandet">
                                     <span class="checkmark"></span>
                                 </label>
                                 <span class="span-message">
@@ -639,18 +642,18 @@
                                         
                                     </h7>
                                     <div class="checkbox-div d-flex align-items-center">
-                                        <label class="radio-label">
+                                        <label class="radio-label" onclick="radioChecked('Sverige')">
                                             <strong>
                                                 Sverige
                                             </strong>
-                                            <input type="radio" class="radio-btn-1" checked="checked" name="radio-3">
+                                            <input type="radio" class="radio-btn-1 Sverige" checked="checked" name="radio-4">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="radio-label">
+                                        <label class="radio-label" onclick="radioChecked('Utlandet')">
                                             <strong>
                                                 Utlandet
                                             </strong>
-                                            <input type="radio" name="radio-3" class="radio-btn-2">
+                                            <input type="radio" name="radio-4" class="radio-btn-2 Utlandet">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>

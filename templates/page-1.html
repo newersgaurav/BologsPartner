@@ -37,7 +37,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/customStyle.css">
+        <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/mediaQuery.css">
     </head>
 
@@ -46,27 +46,31 @@
             <div class="row">
                 <ul class="nav nav-tabs col-sm-12 col-md-4 nav-justified shadow" role="tablist">
                     <li class="nav-item bologsbestallningar-border bologsbestallningar-border-bottom">
-                        <a onclick="changeTab('Bologsbestallningar')" class="bologsbestallningar-border nav-link active"
+                        <a onclick="changeTabs1('Bologsbestallningar')" class="bologsbestallningar-border nav-link active"
                             data-toggle="tab" href="#tab-Bologsbestallningar">
                             Bologsbestallningar
                         </a>
                         <div id="Bologsbestallningar" class="triangle"></div>
                     </li>
                     <li class="nav-item aktiebocker-border aktiebocker-border-bottom">
-                        <a onclick="changeTab('Aktiebocker')" class="aktiebocker-border nav-link" data-toggle="tab"
+                        <a onclick="changeTabs1('Aktiebocker')" class="aktiebocker-border nav-link" data-toggle="tab"
                             href="#tab-Aktiebocker">Aktiebocker</a>
                         <div id="Aktiebocker" class="triangle display-none"></div>
                     </li>
                 </ul>
     
                 <div class="col-sm-12 col-md-8 row align-items-center search-bar">
-                    <div class=" col-md-8 ml-auto col-2 search-div">
+                    <div class=" col-md-8 col-lg-7 ml-auto col-2 search-div">
                         <input class="search-input" type="text" placeholder="Sok efter onskat firmanamn">
                         <i onclick="expandSearchBar()" class="fa fa-search search-icon"></i>
                     </div>
-                    <div class="col-md-3 col-7 btn-div">
+                    <div class="col-md-4 col-lg-3 col-7 btn-div">
                         <div>
-                            <span class="plus-icon">+</span>
+                            <span class="plus-icon">
+                                <strong>
+                                    +
+                                </strong>
+                            </span>
                             <span class="btn-value"><strong>Bestall ny aktiebok</strong></span>
                         </div>
                     </div>
@@ -84,7 +88,7 @@
                     </h5>
                     <!-- for mobile view -->
                     <ul class="cards bg-white shadow d-md-none">
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Onskat firmanamn
@@ -96,7 +100,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Status
@@ -108,7 +112,7 @@
                                 </span>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Kontaktperson
@@ -120,7 +124,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Lagerbolag
@@ -132,7 +136,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Type
@@ -144,7 +148,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Ordertid
@@ -160,7 +164,7 @@
     
     
                     <ul class="cards bg-white shadow d-md-none">
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Onskat firmanamn
@@ -172,7 +176,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Status
@@ -184,7 +188,7 @@
                                 </span>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title"><strong>
                                 Kontaktperson
                             </strong>
@@ -195,7 +199,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Lagerbolag
@@ -207,7 +211,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Type
@@ -219,7 +223,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Ordertid
@@ -315,7 +319,7 @@
                     </h5>
                     <!-- for mobile view -->
                     <ul class="cards bg-white shadow d-md-none">
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 Bolag
                             </p>
@@ -323,7 +327,7 @@
                                 Noronic AB
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 Org.nr
                             </p>
@@ -335,7 +339,7 @@
                 
                 
                     <ul class="cards bg-white shadow d-md-none">
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 Bolag
                             </p>
@@ -343,7 +347,7 @@
                                 Noronic ABCD
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 Org.nr
                             </p>

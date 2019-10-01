@@ -32,27 +32,17 @@
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-         rel = "stylesheet">
-        <link rel="stylesheet" href="../css/commonStyle.css">
-        <link rel="stylesheet" href="../css/customStyle.css">
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/mediaQuery.css">
-        <link rel="stylesheet" href="../css/page-3.css">
-        <link rel="stylesheet" href="../css/page-4.css">
-        <link rel="stylesheet" href="../css/page-5.css">
-        <link rel="stylesheet" href="../css/page-7.css">
     </head>
 
     <body>
-            <div class="popup display-none">
-                                            
-            </div>
-        <div class="background-effect"></div>
+        <div class="popup display-none"></div>
         <div class="page3 shadow">
             <button class="back-button">
                 <strong>
-                    <i class="fa fa-arrow-left left-arrow"></i>
-                    Back
+                    <i class="fa fa-arrow-circle-left left-arrow"></i>
                 </strong>
             </button>
         
@@ -63,30 +53,30 @@
             </h3>
 
             <div class="row no-gutters flex-nowrap scroll-tabs">
-                <ul class="nav nav-tabs col-12 row no-gutters flex-nowrap nav-justified shadow" role="tablist">
-                    <li class="nav-item col-md-2 col-4 Aktieagare-border-radius Aktieagare-border">
-                        <a onclick="changeTab('Aktieagare')" class="Aktieagare-border-radius nav-link active"
+                <ul class="nav nav-tabs col-12 row no-gutters flex-nowrap nav-justified" role="tablist">
+                    <li class="nav-item col-md-3 col-lg-2 active-border-bottom Aktieagare-border-radius Aktieagare-border">
+                        <a onclick="changeTabs2('Aktieagare')" class="Aktieagare-border-radius nav-link active"
                             data-toggle="tab" href="#tab-Aktieagare">
                             Aktieagare
                         </a>
                         <div id="Aktieagare" class="triangle"></div>
                     </li>
-                    <li class="nav-item col-md-2 col-4 Handelser-border Handelser-border">
-                        <a onclick="changeTab('Handelser')" class="aktiebocker-border nav-link" data-toggle="tab"
+                    <li class="nav-item col-md-3 col-lg-2 Handelser-border Handelser-border">
+                        <a onclick="changeTabs2('Handelser')" class="aktiebocker-border nav-link" data-toggle="tab"
                             href="#tab-Handelser">
                             Handelser
                         </a>
                         <div id="Handelser" class="triangle display-none"></div>
                     </li>
-                    <li class="nav-item col-md-2 col-4 Rapporter-border Rapporter-border">
-                        <a onclick="changeTab('Rapporter')" class="aktiebocker-border nav-link" data-toggle="tab"
+                    <li class="nav-item col-md-3 col-lg-2 Rapporter-border Rapporter-border">
+                        <a onclick="changeTabs2('Rapporter')" class="aktiebocker-border nav-link" data-toggle="tab"
                             href="#tab-Rapporter">
                             Rapporter
                         </a>
                         <div id="Rapporter" class="triangle display-none"></div>
                     </li>
-                    <li class="nav-item col-md-2 col-4 Administration-border Administration-border shadow">
-                        <a onclick="changeTab('Administration')" class="aktiebocker-border nav-link" data-toggle="tab"
+                    <li class="nav-item col-md-3 col-lg-2 Administration-border Administration-border">
+                        <a onclick="changeTabs2('Administration')" class="aktiebocker-border nav-link" data-toggle="tab"
                             href="#tab-Administration">
                             Administration
                         </a>
@@ -157,9 +147,9 @@
 
 
                     <div class="row no-gutters filter-input-div">
-                        <div class="col-md-7 col-12 row no-gutters flex-nowrap align-items-center">
+                        <div class="col-md-8 col-lg-7 col-12 row no-gutters flex-nowrap align-items-center">
                             <div onclick="openFilterDropdown('Alla-aktietyper')" id="Alla-aktietyper" 
-                                class="col-md-3 filter-div shadow">
+                                class="col-md-4 col-lg-3 filter-div shadow">
                                 <strong>
                                     Alla aktietyper
                                 </strong>
@@ -177,7 +167,7 @@
                                 <i class="fa fa-chevron-down dropdown-icon"></i>
                             </div>
                             <div onclick="openFilterDropdown('Alla-aktieagare')" id="Alla-aktieagare" 
-                                class="col-md-3 filter-div shadow">
+                                class="col-md-4 col-lg-3 filter-div shadow">
                                 <strong>
                                     Alla aktieagare
                                 </strong>
@@ -195,18 +185,21 @@
                                 <i class="fa fa-chevron-down dropdown-icon"></i>
                             </div>
                             <div class="col-md-4 col-6 switch-div d-flex align-items-center">
-                                <span class="circle-span-container">
-                                    <span class="circle-span"></span>
-                                </span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
                                 <span class="switch-div-desp">
                                     Visa historiska agare
                                 </span>
                             </div>
-                            <div class="col-5 ml-auto d-md-none filter-div shadow"
+                            <div class="col-5 ml-auto d-md-none filter-div shadow d-flex align-item-center justify-content-between"
                                 data-toggle="modal" data-target="#myFilterModal" id="filter-btn">
+                                <img class="filter-img" src="../images/filter-icon.svg" alt="image">
                                 <strong>
                                     Filtrera
                                 </strong>
+                                
                             </div>
                             <!-- filter modal -->
 
@@ -239,7 +232,7 @@
                                                 <li class="col-4 filter-tabs">
                                                     <ul class="nav nav-tabs" role="tablist">
                                                         <li class="nav-item Aktietyper-border">
-                                                            <a onclick="changeTab('Aktietyper')" class="nav-link active" data-toggle="tab"
+                                                            <a onclick="changeVerticalTabs('Aktietyper')" class="nav-link active" data-toggle="tab"
                                                                 href="#tab-Aktietyper">
                                                                 <strong>
                                                                     Aktietyper
@@ -248,7 +241,7 @@
                                                             <div id="Aktietyper" class="vertical-triangle"></div>
                                                         </li>
                                                         <li class="nav-item filter-Aktieagare-border">
-                                                            <a onclick="changeTab('filter-Aktieagare')" class="nav-link" data-toggle="tab"
+                                                            <a onclick="changeVerticalTabs('filter-Aktieagare')" class="nav-link" data-toggle="tab"
                                                                 href="#tab-filter-Aktieagare">
                                                                 <strong>
                                                                     Aktieagare
@@ -300,7 +293,7 @@
                             </div>
                             <!-- filter modal ends -->
                         </div>
-                        <div class="col-md-5 col-12 search-input-div d-flex justify-content-end">
+                        <div class="col-md-4 col-lg-5 col-12 search-input-div d-flex justify-content-end">
                             <input type="text">
                             <i class="fa fa-search search-input-icon"></i>
                         </div>
@@ -309,7 +302,7 @@
                     <!-- mobile view -->
 
                     <ul class="cards bg-white shadow d-md-none">
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Agare
@@ -321,7 +314,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Stamaktier
@@ -333,7 +326,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Agarandel
@@ -345,7 +338,7 @@
                                 </strong>
                             </p>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex card-title-value-pair">
                             <p class="title">
                                 <strong>
                                     Roster
@@ -430,26 +423,27 @@
                     </ul>
                     <!-- mobile tabs view -->
                     
-                    <div class="dropdown-div d-md-none">
+                    <div onclick="toggleDropdown('tab-Handelser')" class="dropdown-div d-md-none">
                         <span>
                             <strong>
                                 Oversikt
                             </strong>
                         </span>
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item" id="Oversikt">
+                        <i class="fa fa-chevron-down dropdown-icon"></i>
+                        <ul class="nav nav-tabs display-none" role="tablist">
+                            <li onclick="dropdownAction('tab-Handelser',event, this.id)" class="nav-item" id="Oversikt">
                                 <a class="nav-link dropdown-list active" data-toggle="tab" value="Oversikt"
                                     href="#tab-Oversikt">
                                     Oversikt
                                 </a>
                             </li>
-                            <li class="nav-item" id="Ny-handelse">
+                            <li onclick="dropdownAction('tab-Handelser',event,this.id)" class="nav-item" id="Ny-handelse">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Ny handelse" 
                                 href="#tab-Ny-handelse">
                                     Ny handelse
                                 </a>
                             </li>
-                            <li class="nav-item" id="Angra">
+                            <li onclick="dropdownAction('tab-Handelser',event,this.id)" class="nav-item" id="Angra">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Angra" 
                                 href="#tab-Angra">
                                     Angra
@@ -540,7 +534,7 @@
                             </div>
                             <!-- mobile view -->
                             <ul class="cards bg-white shadow d-md-none">
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <strong>
                                             Datum
@@ -552,7 +546,7 @@
                                         </strong>
                                     </p>
                                 </li>
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <strong>
                                             Typ
@@ -564,7 +558,7 @@
                                         </strong>
                                     </p>
                                 </li>
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <strong>
                                             Beskrivning
@@ -699,7 +693,7 @@
 
                             <!-- mobile view -->
                             <ul class="cards bg-white shadow d-md-none">
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <label class="label-container">
                                             <input type="checkbox">
@@ -715,7 +709,7 @@
                                         </strong>
                                     </p>
                                 </li>
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <label class="label-container" style="visibility:hidden">
                                             <input type="checkbox">
@@ -731,7 +725,7 @@
                                         </strong>
                                     </p>
                                 </li>
-                                <li class="d-flex">
+                                <li class="d-flex card-title-value-pair">
                                     <p class="title">
                                         <label class="label-container" style="visibility:hidden">
                                             <input type="checkbox">
@@ -806,7 +800,7 @@
 
                     <div class="desktop-view-value shadow row no-gutters bg-white align-items-center d-flex">
                         <p class="col-md-1 col-2">
-                            <i class="file-icon fa fa-file-alt"></i>
+                            <img class="text-document-image" src="../images/text-document.png" alt="image">
                         </p>
                         <p class="col-md-11 col-10">
                             <strong>
@@ -853,39 +847,40 @@
 
                     <!-- select options for mobile -->
 
-                    <div class="dropdown-div d-md-none">
+                    <div onclick="toggleDropdown('tab-Administration')" class="dropdown-div d-md-none">
                         <span>
                             <strong>
                                     Lasrattigheter
                             </strong>
                         </span>
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item" id="Lasrattigheter">
+                        <i class="fa fa-chevron-down dropdown-icon"></i>
+                        <ul class="nav nav-tabs display-none" role="tablist">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Lasrattigheter">
                                 <a class="nav-link dropdown-list active" data-toggle="tab" value="Lasrattigheter" href="#tab-Lasrattigheter">
                                     Lasrattigheter
                                 </a>
                             </li>
-                            <li class="nav-item" id="Bolagsuppgifter">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Bolagsuppgifter">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Bolagsuppgifter" href="#tab-Bolagsuppgifter">
                                     Bolagsuppgifter
                                 </a>
                             </li>
-                            <li class="nav-item" id="Facturaadress">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Facturaadress">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Facturaadress" href="#tab-Facturaadress">
                                     Facturaadress
                                 </a>
                             </li>
-                            <li class="nav-item" id="Byt-administrator">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Byt-administrator">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Byt administrator" href="#tab-Byt-administrator">
                                     Byt administrator
                                 </a>
                             </li>
-                            <li class="nav-item" id="Nollstall-aktieboken">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Nollstall-aktieboken">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Nollstall aktieboken" href="#tab-Nollstall-aktieboken">
                                     Nollstall aktieboken
                                 </a>
                             </li>
-                            <li class="nav-item" id="Avsluta-aktieboken">
+                            <li onclick="dropdownAction('tab-Administration',event,this.id)" class="nav-item" id="Avsluta-aktieboken">
                                 <a class="nav-link dropdown-list" data-toggle="tab" value="Avsluta aktieboken" href="#tab-Avsluta-aktieboken">
                                     Avsluta aktieboken
                                 </a>

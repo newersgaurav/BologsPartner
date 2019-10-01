@@ -1,0 +1,1657 @@
+/* common style */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "foco" , sans-serif;
+    background: #f5f9fc;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.relative-position{
+    position: relative;
+}
+
+.padding-0{
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* end of common css */
+
+
+/* header css */
+
+
+
+header .row{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+
+
+.logo-div img{
+    width: 100%;
+}
+
+header .nav-link{
+    color: #222;
+    font-size: 1em;
+}
+
+header .nav-item{
+    padding-right: 0.5em;
+    padding-left: 0.5em
+}
+
+header .nav-item:last-child{
+    padding-right: 0px;
+    border-left: 1px solid #e6e6e6;
+}
+
+header .navbar{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header .navbar-nav{
+    justify-content: flex-end;
+}
+
+/* header for small screen */
+
+.menu-list-sm{
+    height: 0;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 0.5s ease;  
+  -moz-transition: all 0.5s ease;  
+  -o-transition: all 0.5s ease;  
+  -ms-transition: all 0.5s ease;  
+  transition: all 0.5s ease;
+}
+
+.animated-dropdown{
+    height: auto;
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+}
+
+.menu-list-sm li{
+    padding: 20px;
+}
+
+.menu-list-sm li:last-child{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.menu-list-sm li a{
+    color: #222;
+    font-size: 24px;
+}
+
+
+/* humburger css */
+
+  
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #95938b;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+    transform: rotate(-45deg) translate(-4px, 3px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* end of humburger css */
+
+/* end of header for small screen */
+
+/* end of header css */
+
+
+
+/* footer css */
+
+footer{
+    padding-top: 50px;
+    background: #fff;
+}
+
+footer span{
+    display: block;
+}
+
+footer ul li{
+    line-height: 1.8;
+}
+
+footer h4, footer p{
+    color: #222222;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+.Om-oss-para{
+    color: #747474;
+}
+
+.Telefon, .Fax{
+    color: #5d5d5d;
+    display: inline;
+}
+
+.footer-links{
+    color: #fc7d00;
+    text-decoration: underline;
+    text-decoration-color: #fc7d00;
+    font-size: 18px;
+}
+
+.footer-links:hover{
+    cursor: pointer;
+    color: #fc7d00;
+}
+
+/* end of footer css */
+
+/* page-1 css */
+
+.page1{
+    padding-top: 50px;
+}
+
+.page1 .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+.page1 .nav-tabs{
+    padding: 0px;
+    background: #fff;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.page1 .nav-item{
+    position: relative;
+    padding: 0px;
+}
+
+.page1 .nav-link{
+    padding: 21px 0px;
+    font-size: 14px;
+    color: #fc7d00;
+    border: 0px;
+    width: 100%;
+}
+
+.aktiebocker-border{
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.bologsbestallningar-border{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.bologsbestallningar-border-bottom
+, .Aktieagare-border-bottom
+{
+    border-bottom: 5px solid #fb6a3f;
+}
+
+.bologsbestallningar-border-bottom .active, .Aktieagare-border-bottom .active{
+    border-right: 2px solid;
+    border-color: #ffe4d2 !important;
+}
+
+.aktiebocker-border-bottom .active{
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-color: #ffe4d2 !important;
+}
+
+.page1 .nav-link.active{
+    color: #fb6a3f;
+    font-weight: 700;
+    /* border-: 5px solid #fb6a3f; */
+    background: #fff3ed;
+}
+
+
+
+.triangle{
+    width: 10px;
+    border-top: solid 7px #fb6a3f;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    position: absolute;
+    bottom: -16px;
+    left: 45%;
+}
+
+.cards{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title-value-pair p{
+    flex-basis: 50%;
+    margin: 3px 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-title-value-pair:first-child p{
+    margin-top: 0px;
+}
+
+.card-title-value-pair:last-child p{
+    margin-bottom: 0px;
+}
+
+.title{
+    color: #f88544;
+    background: #ffeedf;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+.ordertid-value{
+    color: #868686;
+}
+
+.status-1{
+    background: #fdf8e5;
+    color: #8c8152;
+    border-left: 5px solid #f5c73a;
+}
+
+.status-2{
+    background: #ecfdfc;
+    color: #4f9490;
+    border-left: 5px solid #99cfcc;
+}
+
+.status{
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.head-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.title-value{
+    font-size: 12px;
+    background: #fff;
+    padding: 20px 0px;
+}
+
+.search-bar{
+    border-left: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.search-div{
+    padding-right: 50px;
+    position: relative;
+}
+
+.search-input{
+    background: #f3f3f3;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+}
+
+.search-icon{
+    font-size: 18px;
+    color: #fcaf79;
+    background: #f3f3f3;
+    position: absolute;
+    padding: 10px 15px;
+    right: 50px;
+    top: 0px;
+}
+
+.search-input:focus{
+    outline:none;
+}
+
+::placeholder {
+    color: #aeaead; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #aeaead;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #aeaead;
+}
+
+.btn-div{
+    padding: 0px;
+}
+
+.btn-div div{
+    text-align: center;
+    background: #fb6a3f;
+    padding: 10px 0px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.plus-icon{
+    display: inline-block;
+    width: 25px;
+    font-size: 17px;
+    text-align: -webkit-center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.btn-value{
+    padding-left: 10px;
+}
+
+.button-content{
+    flex-basis: 80%;
+}
+
+.desktop-view-value p, .desktop-view-heading p{
+    margin: 0px;
+    font-size: 14px;
+}
+
+.desktop-view-heading p{
+    color: #f88544;
+}
+
+.desktop-view-value{
+    padding: 20px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.desktop-view-heading{
+    padding: 15px 20px;
+    background: #ffeedf;
+    border-radius: 4px;
+}
+/* end of page-1 css */
+
+
+
+
+
+.container .u1{
+    display: flex;
+}
+
+.container .u1 .li-1{
+    height: auto;
+    background: #ccc;
+}
+
+.container .ul-2 .li-2{
+    background: #4f9490;
+    height: fill-available;
+}
+.li-1{
+    flex-basis: 50%;
+}
+
+.li-2{
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.ul-2{
+    height: fill-available;
+}
+
+
+/* page-3 css */
+
+.page3{
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    background: #fff;
+}
+
+.back-button{
+    color: #ff6700;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    text-align: start;
+}
+
+.back-button:focus{
+    outline: none;
+}
+
+.back-button:hover{
+    cursor: pointer;
+}
+
+.page3-heading{
+    margin: 40px 0px;
+}
+
+.card-heading{
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card-content{
+    padding-left: 20px !important;
+    margin-bottom: 20px;
+}
+
+.card-content-title , .card-content-title-value{
+    font-size: 15px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0px;
+}
+
+.card-content-title{
+    color: #767676;
+}
+
+.card{
+    margin-bottom: 50px;
+}
+
+/* end of page-3 css */
+
+/* page-4 css */
+
+.card-heading{
+    position: relative;
+}
+
+.card-heading-btn{
+    position: absolute;
+    padding: 8px;
+    background: #e07c1d;
+    color: #fff;
+    right: 10px;
+    top: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.card-heading-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.docu-div{
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.doc-title{
+    background: #fceddf;
+    color: #db720f;
+    padding: 0px;
+    margin: 0px;
+}
+
+.doc-title li, .doc-title-value li{
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+.doc-title-value{
+    background: #f8f9fa;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pdf-icon{
+    width: 20px;
+}
+
+.pdf-name{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.mottaget-value p{
+    margin: 0px;
+}
+
+.mottaget-value p:last-child{
+    color: #ff6700;
+}
+
+.download-icon{
+    margin-right: 5px;
+}
+
+/* end of page-4 css */
+
+/* page-5 css */
+
+/* The container */
+.radio-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .radio-label .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-label:hover input ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-label input:checked ~ .checkmark {
+    border: 1px solid #47be6f;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radio-label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .span-message{
+      display: none;
+      background: #faf2e8;
+      color: #cd520f;
+      font-size: 13px;
+      padding: 10px 10px;
+      margin-left: 100px;
+      border-radius: 4px;
+  }
+
+  .span-message img{
+      width: 20px;
+      margin-right: 10px;
+  }
+
+  .radio-label input:checked ~ .span-message{
+      display: inline;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-label .checkmark:after {
+       top: 2px;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #47be6f;
+  }
+
+  .ques-ans-div{
+      padding: 20px 0px;
+  }
+
+  .ques-ans-div h5{
+      margin: 10px 0px;
+  }
+
+  .ques-ans-div p{
+      color: #787878;
+      font-size: 17px;
+  }
+
+  .delete-icon , .edit-icon{
+      height: 20px;
+      margin-right: 15px;
+  }
+
+  .doc-title-value p{
+      margin: 0px;
+  }
+
+
+  .doc-title li, .doc-title-value li{
+      padding: 15px 0px;
+  }
+
+  .status-info .doc-title-value li, .status-info .doc-title li{
+      padding: 8px 0px;
+  }
+
+  .roll{
+      padding-left: 30px !important;
+  }
+
+  .roll-value{
+      padding-left: 30px !important;
+  }
+
+  .atgarder{
+      padding-right: 30px !important;
+  }
+
+  .atgarder-value {
+      padding-right: 30px !important;
+  }
+
+  .doc-title-value li:last-child{
+      padding-right: 30px;
+  }
+
+  .mobile-title{
+      color: #db720f;
+  }
+
+  .mobile-title-value p{
+      margin: 0px;
+  }
+
+  .mobile-title-value, .mobile-title{
+      margin-bottom: 10px;
+      font-size: 14px;
+  }
+
+  .mobile-icon-div{
+      margin: 0px;
+  }
+
+  .mobile-icon-div li{
+      text-align: center;
+  }
+
+  .mobile-icon-div li:first-child{
+      border-right: 1px solid #e0e0e0;
+  }
+
+  .btn-ok{
+      color: #fff;
+      background: #db720f;
+      border: none;
+  }
+
+  .btn-close{
+      color: #db720f;
+      background: #fff;
+      border: 1px solid #db720f;
+  }
+
+  #myDeleteModal .modal-body{
+      text-align: center;
+  }
+
+  #myDeleteModal .modal-body button{
+      width: 40%;
+      padding: 10px 0px;
+      display: block;
+      border-radius: 4px;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #myDeleteModal.show{
+      display: flex !important;
+  }
+
+  .modal-dialog{
+      max-width: 100%;
+  }
+
+  #myDeleteModal .modal-dialog{
+      width: 40%;
+  }
+
+  #myEditModal .modal-dialog, #myButtonModal .modal-dialog{
+      width: 85%;
+  }
+
+  #myEditModal .modal-header, #myButtonModal .modal-header{
+      border: none;
+      padding-left: 50px;
+  }
+
+  #myEditModal .close, #myButtonModal .close{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 45px;
+      font-weight: normal;
+  }
+
+  #myDeleteModal .modal-body{
+      padding: 50px 0px;
+  }
+
+  #myDeleteModal .modal-body h3{
+      margin-bottom: 50px;
+  }
+
+  #myEditModal .modal-body, #myButtonModal .modal-body{
+      padding: 16px 50px;;
+  }
+
+  #myEditModal .checkbox-div, #myButtonModal .checkbox-div{
+      flex-wrap: wrap;
+  }
+
+  #myEditModal .radio-label, #myButtonModal .radio-label{
+      margin-right: 10px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+
+  #myEditModal .span-message, #myButtonModal .span-message{
+      visibility: hidden;
+      display: inline;
+      margin-left: 50px;
+  }
+
+  #myEditModal label, #myButtonModal label{
+      color: #7b7b7b;
+      font-size: 14px;
+  }
+
+  #myButtonModal .select-div{
+      padding-right: 50px;
+  }
+
+  #myButtonModal .select-div label{
+      color: #000;
+  }
+
+  .Tilltalsnamn-div{
+      padding-right: 10px !important;
+  }
+
+  .Efternamn-div{
+      padding-left: 10px !important;
+  }
+
+  .Personuppgifter, .Aktier, .form-btn-group, .organisationsnummer-div{
+      padding-right: 50px !important;
+  }
+
+  .Adress, .namn-div{
+      padding-left: 50px !important;
+  }
+
+  .Aktier{
+      margin-bottom: 20px;
+  }
+
+  .form-btn{
+      color: #fff;
+      background: #f7753e;
+      border-radius: 4px;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .form-btn:hover{
+      color: #fff;
+  }
+
+  .avbryt-btn:hover{
+      color: #f7753e;
+  }
+
+  .avbryt-btn{
+      color: #f7753e;
+      border: 1px solid #f7753e;
+      border-radius: 4px;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  #myEditModal input[type="text"]{
+      font-weight: 700;
+      font-size: 14px;
+  }
+
+  .clear-btn{
+      padding: 10px 0px;
+      width: 150px;
+      border-radius: 4px;
+      color: #fff;
+      border: none;
+      background: #fc7f3f;
+      margin-top: 20px;
+  }
+
+  .clear-btn:focus{
+      outline:none;
+  }
+
+/* end of page-5 css */
+
+
+/* page-6 css */
+
+.Ovrig p, .Firmateckning p{
+    color: #6e6e6e;
+    margin: 0px;
+}
+
+.tillval{
+    padding-left: 40px !important;
+}
+
+.tillval ul li{
+    color: #6e6e6e;
+    margin-bottom: 10px;
+}
+
+.tillval ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.tillval ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f77300; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.bolagsuppgifter-para{
+    color: #6e6e6e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.bolagsuppgifter .doc-title-value, .status-info .doc-title-value{
+    background: #fff9f6;
+}
+
+.lamna-btn{
+    color: #f77300;
+    border: 1px solid #f77300;
+    border-radius: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.lamna-done{
+    color: #45ac3b;
+    border: transparent;
+    padding: 6px 20px;
+    font-size: 25px;
+}
+
+/* end of page-6 css */
+
+
+/* page-7 css */
+
+/* customize checkbox */
+
+.label-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .label-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .label-container input:checked ~ .checkmark {
+    background-color: #47be6f;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .label-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .desktop-view-value .label-container .checkmark{
+      top: -4px;
+  }
+  
+  /* Show the checkmark when checked */
+  .label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .label-container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 8px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .page3-heading span{
+      color: #858585;
+      font-weight: 500;
+  }
+
+
+.scroll-tabs .nav-tabs{
+    padding: 0px;
+    background: #fff;
+    border-radius: 4px;
+    border: 0px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.scroll-tabs .nav-item{
+    position: relative;
+    padding: 0px;
+    flex: 0 0 auto;
+}
+
+.scroll-tabs .active-border-bottom{
+    border-bottom: 5px solid #fb6a3f !important;
+}
+
+.scroll-tabs .nav-link{
+    padding: 21px 0px;
+    font-size: 14px;
+    color: #fc7d00;
+    border: 0px;
+    width: 100%;
+}
+
+.scroll-tabs .nav-link.active{
+    color: #fb6a3f;
+    font-weight: 700;
+    background: #fff3ed;
+}
+
+.Aktieagare-border-radius{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.Handelser-border, .Rapporter-border, .Administration-border{
+    border-right: 2px solid #e0e0e0;
+}
+
+.Handelser-border .active, .Rapporter-border .active, .Administration-border .active{
+    border-right: 2px solid #ffcfad !important;
+    border-left: 2px solid #ffcfad !important;
+ }
+
+ .Aktieagare-border .active{
+    border-right: 2px solid #ffcfad !important;
+ }
+
+.scroll-tabs::-webkit-scrollbar, .filter-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-tabs{
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    padding-bottom: 20px;
+}
+
+
+
+.info-cards{
+    background: #fff2e7;
+    border-radius: 4px;
+    padding: 20px;
+    flex-basis: 20%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.info-cards:last-child{
+    margin-right: 0px;
+}
+
+.info-cards .card-title{
+    color: #8e8a88;
+}
+
+.info-cards .card-title-value{
+    font-size: 20px;
+    color: #2b3c4d;
+}
+
+.info-cards .card-title-value span{
+    font-size: 14px;
+}
+
+.info-card-img{
+    width: 40px;
+}
+
+#tab-Rapporter{
+    min-height: 300px;
+}
+
+#tab-Rapporter h5{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.administrator{
+    font-size: 16px;
+}
+
+.lasrattigheter{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.lasrattigheter-desc{
+    color: #858585;
+}
+
+#tab-Administration .btn-container{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#tab-Aktieagare .cards{
+    margin-top: 20px;
+}
+
+#tab-Aktieagare .desktop-view-heading{
+    margin-top: 20px;
+}
+
+#tab-Administration button{
+    color: #fc7d00;
+    border-color: #fc7d00;
+    width: 120px;
+}
+
+.administration-title{
+    flex-basis: 25% !important;
+}
+
+.administration-title-value{
+    flex-basis: 75% !important;
+}
+
+#tab-Administration .desktop-tabs, #tab-Handelser .desktop-tabs{
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+
+#tab-Administration .desktop-tabs .nav-item, #tab-Handelser .desktop-tabs .nav-item{
+    margin-right: 20px;
+}
+
+#tab-Administration .desktop-tabs .nav-item .nav-link, #tab-Handelser .desktop-tabs .nav-item .nav-link{
+    color: #858585;
+    border: none;
+}
+
+#tab-Administration .desktop-tabs .nav-item .active, #tab-Handelser .desktop-tabs .nav-item .active{
+    border: none;
+    border-bottom: 5px solid #fc7d00 !important;
+    color: #fc7d00;
+    font-weight: 700;
+}
+
+.switch-div-desp{
+    font-size: 15px;
+    color: #727272;
+    margin-left: 10px;
+}
+
+.dropdown-div{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.dropdown-div .nav-tabs .nav-item .nav-link{
+    padding: 10px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.dropdown-div .nav-tabs .nav-item .active{
+    background: #fff2e7;
+    color: #fb6a3f;
+    border: none;
+}
+
+.dropdown-div .nav-tabs{
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 104%;
+    z-index: 1;
+    background: #fff;
+    left: 0px;
+    border: 1px solid #fff2e7;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.filter-div{
+    border-radius: 500px;
+    border: 1px solid #e0e0e0;
+    padding: 7px !important;
+    padding-left: 20px !important;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #858585;
+    position: relative;
+}
+
+.filter-div:focus{
+    outline: none;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:rgba(0,0,0,0.3);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.triangle-dropdown{
+    width: 10px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    z-index: 1;
+}
+
+.filter-div:last-child{
+    margin-right: 0px;
+}
+
+.filter-dropdown{
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    width: 130%;
+    max-height: 230px;
+    overflow-y: auto;
+    z-index: 1;
+    margin-left: -40px;
+    padding: 10px;
+}
+
+#tab-Handelser .dropdown-div .dropdown-icon, #tab-Administration .dropdown-div .dropdown-icon{
+    top: 13px;
+}
+
+.dropdown-icon{
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    color: #858585;
+    transition: all 0.5s ease-in;
+}
+
+.filter-dropdown .label-container{
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.filter-dropdown .label-container .checkmark{
+    top: 4px;
+    height: 15px;
+    width: 15px;
+}
+
+.filter-dropdown .label-container .checkmark:after{
+    left: 4px;
+    top: 1px;
+    width: 7px;
+}
+
+#Alla-aktietyper strong, #Alla-aktieagare strong{
+    color: #000;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.search-input-div{
+    position: relative;
+}
+
+.search-input-div input{
+    background: #f3f3f3;
+    border-radius: 4px;
+    width: 70%;
+    border: none;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.search-input-div input:focus{
+    outline: none;
+}
+
+.search-input-div .search-input-icon{
+    color: #ffa466;
+    font-size: 20px;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+
+#tab-Oversikt .desktop-view-heading{
+    margin-top: 30px;
+}
+
+.Aktiebokshandelser, .Registrera{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#tab-Oversikt .cards{
+    margin-top: 20px;
+}
+
+.Ny-handelse-cards{
+    flex-basis: 22%;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ffcfad;
+    background: #fff3ed;
+    margin-bottom: 20px;
+    margin-right: calc(12%/4);
+}
+
+.Ny-handelse-cards:nth-child(4n){
+    margin-right: 0px;
+}
+
+.Ny-handelse-cards:hover{
+    -moz-box-shadow: 0 0 5px #fc7d00;
+    -webkit-box-shadow: 0 0 5px#fc7d00;
+    box-shadow: 0 0 5px #fc7d00;
+    cursor: pointer;
+}
+
+.Registrera-para{
+    color: #858585;
+}
+
+.Ny-handelse-cards:hover h5{
+    color: #fc7d00;
+}
+
+.Ny-handelse-cards h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.Ny-handelse-cards p{
+    font-size: 14px; 
+    color: #858585;
+}
+
+#tab-Angra .title strong{
+    display: inline;
+}
+
+#tab-Angra .title label{
+    display: inline-block;
+}
+
+#tab-Angra .btn-container{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#tab-Angra .btn-container button{
+    color: #e07f38;
+    border-color: #e07f38;
+    width: 300px;
+}
+
+#tab-Angra .btn-container button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+#tab-Angra .btn-container button:hover{
+    background: #fff;
+}
+
+#tab-Angra .btn-container button img{
+    width: 17px;
+    margin-right: 10px;
+}
+
+#myFilterModal .modal-dialog{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#myFilterModal .modal-body{
+    padding: 0px;
+}
+
+#myFilterModal .filter-tab-headers{
+    padding: 10px 0px;
+    margin: 0px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.filter-tabs .nav-link{
+    color: #7b7b7b;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.filter-tabs .nav-item{
+    border-right: 4px solid transparent;
+}
+
+.filter-tabs .nav-item .active{
+    color: #e07d37;
+    background: #fcf3ed;
+    border-top: 1px solid #fecead;
+    border-bottom: 1px solid #fecead;
+}
+
+.filter-tabs .nav-item{
+    position: relative;
+    width: 100%;
+}
+
+.filter-tabs .Aktietyper-border{
+    border-right: 4px solid #fb6a3f;
+}
+
+.vertical-triangle{
+    width: 10px;
+    border-top: solid 5px transparent;
+    border-left: solid 7px #fb6a3f;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    position: absolute;
+    right: -15px;
+    top: 35%;
+}
+
+.filter-tabs-values-heading{
+    text-align: right;
+    padding-right: 15px !important;
+    color: #fc7c3f;
+}
+
+.filter-tabs-heading{
+    text-align: center;
+}
+
+#myFilterModal .modal-header{
+    border-bottom: 0px;
+}
+
+#myFilterModal .filter-tab-values{
+    padding: 10px 20px;
+}
+
+#myFilterModal .filter-tab-values .label-container{
+    font-size: 16px;
+}
+
+#myFilterModal .filter-tab-values .label-container .checkmark{
+    top: 3px;
+}
+
+#myFilterModal .modal-footer{
+    padding: 0px;
+}
+
+#myFilterModal .modal-footer .btn{
+    width: 100%;
+    color: #fff;
+    background: #fb693f;
+    border-radius: 0px;
+    border: 0px;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+#myFilterModal .filter-tab-headers-value{
+    height: 0;
+    margin-bottom: 0px;
+    background: white;
+}
+
+#myFilterModal .filter-tabs{
+    border-right: 1px solid #dfdfdf;
+}
+
+#filter-btn{
+    margin-right: 0px;
+}
+
+.text-document-image{
+    width: 50%;
+    color: #fc7d00;
+}
+
+.filter-img{
+    width: 30%;
+}
+
+
+/* switch button */
+
+.switch {
+    position: relative;
+    margin: 0px;
+    width: 25px;
+    height: 15px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #fc7d00;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 9px;
+    width: 9px;
+    left: 3px;
+    bottom: 2px;
+    background-color:#fc7d00;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #fc7d00;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #fc7d00;
+}
+
+input:checked + .slider:before {
+    background-color: #fff;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9x);
+}
+
+.slider.round {
+    border-radius: 500px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end of page-7 css */

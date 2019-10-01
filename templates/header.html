@@ -4,37 +4,87 @@
         <title>Bologs Partner Header</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function (d) {
+                var config = {
+                    kitId: 'hbt2yrl',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h = d.documentElement, t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    },
+                        config.scriptTimeout), tk = d.createElement("script"),
+                    f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading";
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true; tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || a && a != "complete" && a != "loaded") return;
+                    f = true; clearTimeout(t);
+                    try {
+                        Typekit.load(config)
+                    }
+                    catch (e) { }
+                };
+                s.parentNode.insertBefore(tk, s)
+            })(document);
+        </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/customStyle.css">
+        <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/mediaQuery.css">
     </head>
     <body>
         <header class="wrapper">
             <div class="row no-gutters">
-                <div class="logo-div col-8 col-md-4 mr-auto float-left display-inline-block">
+                <div class="logo-div col-8 col-md-3 mr-auto float-left display-inline-block">
                     <img src="../images/logo.png" alt="Bologs Partner logo">
                 </div>
 
                 <nav class="navbar navbar-expand-md d-none d-md-block col-md-8">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lagerbolag</a>
+                            <a class="nav-link" href="#">
+                                <strong>
+                                    Lagerbolag        
+                                </strong>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Andra aktiebolag</a>
+                            <a class="nav-link" href="#">
+                                <strong>
+                                    Andra aktiebolag
+                                </strong>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Avveckla aktiebolag</a>
+                            <a class="nav-link" href="#">
+                                <strong>
+                                    Avveckla aktiebolag
+                                </strong>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Om oss</a>
+                            <a class="nav-link" href="#">
+                                <strong>
+                                    Om oss
+                                </strong>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="#">
+                                <strong>
+                                    Kontakt
+                                </strong>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Logga in</a>
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-user"></i>
+                                <strong>
+                                     Logga in
+                                </strong>
+                            </a>
                         </li>    
                     </ul>
                 </nav>
